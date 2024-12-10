@@ -1,24 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="nav-container">
+            <article class="nav-logo">
+                <a href="#"><img src="billeder/logo.webp" alt="Radar logo"></a>
+            </article>
 
+            <article class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-link-item"><a href="#">MUSIKUNIVERS</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item"><a href="#"></a>Playlister</li>
+                            <li class="dropdown-menu-item"><a href="#"></a>Artistprofiler</li>
+                            <li class="dropdown-menu-item"><a href="#"></a>Podcasts</li>
+                            <li class="dropdown-menu-item"><a href="#"></a>Oplevelser fra gæster</li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-link-item"><a href="#">KONCERTER</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item"><a href="#"></a>Koncertprogram</li>
+                            <li class="dropdown-menu-item"><a href="#"></a>Tideligere koncerter</li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link-item"><a href="#">OM RADAR</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item"><a href="#"></a>Radars betydning</li>
+                            <li class="dropdown-menu-item"><a href="#"></a>Bliv frivillig</li>
+                            <li class="dropdown-menu-item"><a href="#"></a>Vores partnere</li>
+                            <li class="dropdown-menu-item"><a href="#"></a>Find os på</li>
+                        </ul>
+                    </li>
+                    <li class="nav-link-item"><a href="#">MEDLEMSKAB</a></li>
+                </ul>
+            </article>
         </nav>
+        
         <h1>VELKOMMEN TIL RADAR</h1>
     </header>
     <main>
         <section class="intro">
+            <article>
+                <img src="billeder/forside/intro-billeder.webp" alt="billede af en der synger koncert, og e† mere abstrakt billede i en pink neonfarve">
+            </article>
             <article>
                <p>Vi er et intimt spillested i Aarhus, hvor du kan opleve eksperimenterende musik og upcoming kunstnere. Vi præsenterer et bredt udvalg af musikgenrer fra både lokale, nationale og internationale artister. Radar er kendt for sine intime koncertoplevelser i hjertet af Aarhus. Uanset om du er til nichegenrer eller bare elsker live-musik, finder du noget unikt her. </p> 
             </article>
@@ -42,7 +84,8 @@
             <h2>GAVEIDÉ: DEL EN OPLEVELSE MED VENNER</h2>
 
             <article>
-                <img src="billeder/forside/foto-samling.webp" alt="samling af fotos fra Radar koncerter">
+                <img src="billeder/forside/foto-samling.webp" 
+                alt="samling af fotos fra Radar koncerter">
             </article>
         
             <article>
@@ -62,6 +105,7 @@
             </article>
 
             <article>
+                <h3>Oplev hele 4 kunstnere for kun 150 kr!</h3>
                 <p>Astrid Helena, ****&c., ALOO og Cecilie Penney indtager scenen med unikke live-sets, der byder på alt fra æteriske lydlandskaber til hårdtslående beats. En uforglemmelig aften fra den aarhusianske elektroniske musikscene venter dig! 
                     <br>
                 Gå til vores koncertprogram her for flere billige koncerter.
@@ -69,8 +113,37 @@
             </article>
         </section>
 
-
     </main>
+
+    <footer>
+        <article>
+            <h4>ADRESSE</h4>
+            <ul>
+                <li>Radar</li>
+                <li>Karen Wegeners Gade 6</li>
+                <li>DK 8000 Aarhus C</li>
+            </ul>
+        </article>
+
+        <article>
+            <h4>KONTAKT</h4>
+            <ul>
+                <li>Bookingforespørgsler: booking(@)radarlive.dk</li>
+                <li>Generel kontakt: kontakt(@)radarlive.dk</li>
+                <li>Telefon +45 8676 0344</li>
+            </ul>
+        </article>
+
+        <article>
+            <h4>FØLG OS</h4>
+            <ul>
+                <li><a href="https://www.instagram.com/radarlive/" target="_blank" rel="noopener noreferrer">Intagram</a></li>
+                <li><a href="https://www.facebook.com/radarlive" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://open.spotify.com/user/radarlive" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+            </ul>
+        </article>
+
+    </footer>
     
 </body>
 </html>
