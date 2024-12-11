@@ -20,24 +20,46 @@ body{
 
 main {
     margin-left: 2.5rem;
+    margin-right: 2.5rem;
     padding-top: 8rem;
+    max-width: 100rem;
 }
 
 /* intro */
 
-.grid-container {
+.grid-container-1 {
     display: grid;
+    grid-template-areas:
+    "overskrift-area image-area"
+    "text-area image-area";
     grid-template-columns: 1fr 1fr; /* To lige store kolonner */
+    grid-template-rows: auto 1fr;
     gap: 2rem; /* Afstand mellem kolonner */
+    padding-bottom: 3.5rem 0;
 }
 
 .to-billeder {
-    width:100%;
+    width: 110%;
     height: auto;
-    margin-top: -3rem;
+    margin-top: -4rem;
+    align-self: center; 
+}
+
+.intro-image {
+    grid-area: image-area;
+    align-self: center;
+}
+
+.intro-overskrift {
+    grid-area: overskrift-area;
+}
+
+.velkommen-text {
+    grid-area: text-area;
 }
 
 h1 {
+    grid-area: overskrift-area;
     font-weight: 400;
     font-size: 4.5rem;
     line-height: 5rem;
@@ -48,27 +70,135 @@ h1 {
 }
 
 .intro-text {
-    padding-top: 3rem;
-    font-weight: 300;
-    font-size: 14px;
+    font-weight: 200;
+    font-size: 16px;
 }
 
 .quote {
     font-family: "Poppins";
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 100;
     font-style: italic;
+    padding-top: 2.5rem;
 }
 
+.guest-link {
+    padding-top: 2rem;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* infographic  */
 
 .infographic-billede {
     width: 100%;
     height: auto;
     object-fit: contain;
+    padding: 3.5rem 0;
 }
 
 
-.koncert-billede {
-    width: 80%;
+/* gaveidé */
+
+.collage {
+    width: 90%;
     height: auto;
 }
+
+.grid-container-2 {
+    display: grid;
+    grid-template-areas:
+    "collage-area overskrift-area"
+    "collage-area text-area";
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto 1fr;
+    column-gap: 3rem; 
+    row-gap: 1rem;
+    padding: 3.5rem 0;
+}
+
+.gaveide-overskrift {
+    grid-area: overskrift-area;
+}
+
+.gaveide-text {
+    grid-area: text-area;
+    font-weight: 200;
+    max-width: 30rem;
+}
+
+.gaveide-image {
+    grid-area: collage-area;
+    align-self: center; 
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+/* koncert */
+
+.koncert-billede {
+    width: 70%;
+    height: auto;
+    padding: 2rem 0;
+}
+
+h3 {
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+    line-height: 4rem;
+}
+
+.koncertoplevelser {
+    padding: 3.5rem 0;
+}
+.light {
+    font-weight: 200;
+}
+
+.koncert-overskrift {
+    padding-bottom: 1.5rem;
+}
+
+.koncertoplevelser p {
+    max-width: 55rem;
+}
+
+@media (max-width: 480px) {
+
+    .grid-container-1 {
+        display: grid;
+        grid-template-columns: 1fr; /* To lige store kolonner */
+        grid-template-areas:
+        "overskrift-area"
+        "image-area"
+        "text-area";
+
+        gap: 2rem; /* Afstand mellem kolonner */
+        padding-bottom: 3.5rem 0;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .intro-text .guest-link {
+        font-size: 18px;
+    }
+
+    .quote {
+        font-size: 24px;
+    }
+
+    .infographic {
+        display: none;
+    }
+
+}
+

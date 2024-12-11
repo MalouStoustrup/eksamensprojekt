@@ -10,35 +10,64 @@
     --contrast-color: #E1381A;
 }
 
-/* Footer styling */
 footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tre kolonner */
-    gap: 8rem;
+    grid-template-areas:
+    "venstre midten højre";
+    grid-template-columns: 1.5fr 2fr 0.75fr; /* Tre lige store kolonner */
+    gap: 2rem; /* Afstand mellem kolonnerne */
+    background-color: #1d1d1d; /* Mørk baggrund */
+    color: #f7f7f7; /* Lys tekstfarve */
     padding: 2rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: left;
+}
+
+.adresse {
+    grid-area: venstre;
+}
+
+.kontakt {
+    grid-area: midten;
+}
+
+.følg-os {
+    grid-area: højre;
 }
 
 footer h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
     margin-bottom: 1rem;
+    text-transform: uppercase; /* Gør teksten til store bogstaver */
 }
 
 footer ul {
-    list-style: none;
+    list-style: none; /* Fjern bullet points */
     padding: 0;
 }
 
-footer ul li {
+footer li {
+    font-weight: 200;
     margin-bottom: 0.5rem;
 }
 
-footer ul li a {
-    color: var(--secondary-color);
-    text-decoration: none;
+footer a {
+    color: #f7f7f7;
+    text-decoration: none; /* Fjern understregning */
+    transition: color 0.3s ease;
 }
 
-footer ul li a:hover {
-    text-decoration: underline;
+footer a:hover {
+    color: #E1381A; /* Accentfarve ved hover */
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr; /* Skift til én kolonne */
+        grid-template-areas: 
+            "venstre"
+            "midten"
+            "højre"; /* Definer områder i én kolonne */
+    }
+
 }
