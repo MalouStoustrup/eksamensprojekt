@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Poppins;
+    font-family: "Poppins";
 }
 
 :root {
@@ -12,9 +12,63 @@
     --contrast-color: #E1381A;
 }
 
-
 body{
     width: 100vw;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+main {
+    margin-left: 2.5rem;
+    padding-top: 8rem;
+}
+
+/* intro */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To lige store kolonner */
+    gap: 2rem; /* Afstand mellem kolonner */
+}
+
+.to-billeder {
+    width:100%;
+    height: auto;
+    margin-top: -3rem;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 5rem;
+}
+
+.text {
+    line-height: 2rem;
+}
+
+.intro-text {
+    padding-top: 3rem;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.quote {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+
+.infographic-billede {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.koncert-billede {
+    width: 80%;
+    height: auto;
 }

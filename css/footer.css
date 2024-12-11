@@ -1,0 +1,44 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:#1d1d1d;
+    --secondary-color: #f7f7f7;
+    --contrast-color: #E1381A;
+}
+
+/* Footer styling */
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tre kolonner */
+    gap: 8rem;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+footer h4 {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
