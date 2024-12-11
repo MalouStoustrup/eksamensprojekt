@@ -72,7 +72,7 @@ font-weight: 600;
     margin-left: 8px;
     transition: 0.3s ease;
     pointer-events: none;
-    color:var(--secondary-color)
+    color:var(--secondary-color);
 }
 
 .nav-link-item:hover > a > .fa-chevron-down {
@@ -143,16 +143,19 @@ opacity: 1;
     
     
     .nav-container .open-menu {
-        display:initial;
+        display:block;
     }
 
     .nav-container .nav-links-container {
         position: absolute;
-        top: 100%; left:0; right: 0;
+        top: 100%; 
+        right: 0rem;
         background-color: #1d1d1d53;
         backdrop-filter: blur(10px);
         display: none;
-
+        flex-direction: column; /* Sørg for at punkterne er lodret arrangeret */
+        align-items: flex-end; /* Juster punkterne til højre */
+        padding: 1rem; /* Giv lidt padding for spacing */
     }
 
     .nav-container > .nav-links-container > .nav-links > .nav-link-item {
@@ -168,8 +171,7 @@ opacity: 1;
     }
 
     .nav-container > .nav-links-container .nav-links > .nav-link-item:hover > .dropdown-menu {
-        max-height: 250
-px;
+        max-height: 250px;
     }
 
     .nav-container > .nav-links-container > .nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item {
