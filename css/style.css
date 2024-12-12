@@ -24,7 +24,6 @@ main {
     margin-right: 2.5rem;
     margin-bottom: 1rem;
     padding-top: 8rem;
-    overflow: hidden;
 }
 
 /* intro */
@@ -195,6 +194,7 @@ h3 {
 
     h1 {
         font-size: 2rem;
+        line-height: 3rem;
     }
 
     .text {
@@ -229,9 +229,17 @@ h3 {
         line-height: 3rem;
     }
 
+    .gaveide-text {
+        max-width: 100%;
+    }
+
     .koncert-overskrift {
         font-size: 2rem;
         line-height: 3rem;
+    }
+
+    .koncertoplevelser p {
+        max-width: 100% ;
     }
 
     .highlight-overskrift {
@@ -253,7 +261,7 @@ h3 {
 }
 
 /* styling af ipgads og små skærme*/
-@media (max-width: 1024px) {
+@media (min-width: 480px) and (max-width: 1024px) {
 
     /* intro */
 
@@ -268,7 +276,7 @@ h3 {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 4rem;
         line-height: 5rem;
     }
     .intro-image {
