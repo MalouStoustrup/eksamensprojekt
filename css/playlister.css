@@ -17,7 +17,7 @@ body {
 
 main {
     margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-right: 5rem;
     margin-bottom: 1rem;
     padding-top: 8rem;
 }
@@ -33,12 +33,12 @@ h1 {
     font-size: 1rem;
     font-weight: 200;
     max-width: 40rem;
+    line-height: 2rem;
+    padding-top: 1.5rem;
 }
 
 .intro-grid {
     display: grid;
-    grid-template-areas:
-    "text-area spotify-area";
     grid-template-columns: 1.5fr 0.75fr; 
     gap: 3rem;
     padding-bottom: 3rem;
@@ -65,15 +65,209 @@ h1 {
 
 .sange-overskrift-grid {
     display: grid;
-    grid-template-areas:
-    "text-area spotify-area";
     grid-template-columns: 1.5fr 0.5fr; 
     gap: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 .overskrift-sange {
     font-size: 2rem;
 }
 
-/* sange fra spotify */
+.se-sange {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.se-sange p {
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.arrow-icon {
+    width: 2rem;
+    height: auto;
+    margin: 1rem;
+}
+
+/* spotify grid med sange */
+
+.sange-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 3rem;
+    padding-bottom: 5rem;
+}
+
+.sang p {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 200;
+}
+
+/* playlister overskrift */
+
+.playlister-overskrift-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr; 
+    gap: 3rem;
+    padding-bottom: 1rem;
+}
+
+.playlister-overskrift {
+    font-size: 1.5rem;
+}
+
+.se-playlister {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.se-playlister p {
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.arrow-icon {
+    width: 2rem;
+    height: auto;
+    margin: 1rem;
+}
+
+/* spotify grid med playlister */
+
+.playlister-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 3rem;
+    padding-bottom: 5rem;
+}
+
+.playliste p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding-bottom: 1rem;
+}
+
+/* CSS for mobilvisning */
+
+@media (max-width: 480px) {
+
+    main {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        padding-top: 8rem;
+    }
+    
+    /* intro */
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .intro-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+        font-weight: 200;
+        max-width: 100%;
+        line-height: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    .spotify {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* sange overskrift */
+
+    .sange-overskrift-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0rem;
+        padding-bottom: 1rem;
+    }
+
+    .overskrift-sange {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .se-sange {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .se-sange p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .arrow-icon {
+        width: 1.5rem;
+        height: auto;
+        margin: 0.5rem;
+    }
+
+    /* spotify grid med sange */
+
+    .sange-grid {
+        display: grid;
+        grid-template-columns: 1fr; 
+        padding-bottom: 5rem;
+    }
+
+    .sang {
+        max-height: 9rem;
+    }
+
+    .sang p {
+        font-size: 0.8rem;
+    }
+
+    /* playlister overskrift */
+
+    .playlister-overskrift-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0rem;
+        padding-bottom: 1rem;
+    }
+
+    .playlister-overskrift {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .se-playlister {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .se-playlister p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    /* spotify grid med playlister */
+
+    .playlister-grid {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 1.5rem;
+    }
+
+    .playliste p {
+        font-size: 1.4rem;
+    }
+
+}
