@@ -11,7 +11,8 @@
 }
 
 body {
-    background-color: ;
+    background-color: var(--primary-color);
+
 }
 
 main {
@@ -21,8 +22,58 @@ main {
     padding-top: 8rem;
 }
 
+/* intro */
+
+h1 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    font-weight: 200;
+    max-width: 40rem;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-areas:
+    "text-area spotify-area";
+    grid-template-columns: 1.5fr 0.75fr; 
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
 
 .spotify-icon {
-    width: 5%;
+    width: 2rem;
     height: auto;
+    margin: 1rem;
 }
+
+.spotify {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.spotify p {
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+/* sange overskrift */
+
+.sange-overskrift-grid {
+    display: grid;
+    grid-template-areas:
+    "text-area spotify-area";
+    grid-template-columns: 1.5fr 0.5fr; 
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.overskrift-sange {
+    font-size: 2rem;
+}
+
+/* sange fra spotify */
