@@ -26,7 +26,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 3rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
 }
 
 .nav-logo {
@@ -147,6 +148,8 @@ opacity: 1;
     }
 
     .nav-container .nav-links-container {
+        width: 100vw; /* Hele bredden af viewporten */
+        height: 100vh; /* Hele højden af viewporten */
         position: absolute;
         top: 100%; 
         right: 0rem;

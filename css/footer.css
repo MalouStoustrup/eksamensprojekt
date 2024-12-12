@@ -18,7 +18,9 @@ footer {
     gap: 2rem; /* Afstand mellem kolonnerne */
     background-color: #1d1d1d; /* Mørk baggrund */
     color: #f7f7f7; /* Lys tekstfarve */
-    padding: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .adresse {
@@ -34,7 +36,7 @@ footer {
 }
 
 footer h4 {
-    font-size: 1.2rem;
+    font-size: 16px;
     font-weight: 400;
     margin-bottom: 1rem;
     text-transform: uppercase; /* Gør teksten til store bogstaver */
@@ -46,6 +48,7 @@ footer ul {
 }
 
 footer li {
+    font-size: 14px;
     font-weight: 200;
     margin-bottom: 0.5rem;
 }
@@ -63,6 +66,7 @@ footer a:hover {
 
 @media (max-width: 768px) {
     footer {
+        margin: 1.5rem;
         grid-template-columns: 1fr; /* Skift til én kolonne */
         grid-template-areas: 
             "venstre"

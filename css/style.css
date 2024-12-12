@@ -12,8 +12,9 @@
     --contrast-color: #E1381A;
 }
 
+/* generel styling*/
+
 body{
-    width: 100vw;
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
@@ -21,8 +22,9 @@ body{
 main {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+    margin-bottom: 1rem;
     padding-top: 8rem;
-    max-width: 100rem;
+    overflow: hidden;
 }
 
 /* intro */
@@ -35,11 +37,11 @@ main {
     grid-template-columns: 1fr 1fr; /* To lige store kolonner */
     grid-template-rows: auto 1fr;
     gap: 2rem; /* Afstand mellem kolonner */
-    padding-bottom: 3.5rem 0;
+    padding-bottom: 3.5rem;
 }
 
 .to-billeder {
-    width: 110%;
+    width: 100%;
     height: auto;
     margin-top: -4rem;
     align-self: center; 
@@ -63,6 +65,7 @@ h1 {
     font-weight: 400;
     font-size: 4.5rem;
     line-height: 5rem;
+    max-width: 100%;
 }
 
 .text {
@@ -71,12 +74,12 @@ h1 {
 
 .intro-text {
     font-weight: 200;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .quote {
     font-family: "Poppins";
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 100;
     font-style: italic;
     padding-top: 2.5rem;
@@ -84,7 +87,7 @@ h1 {
 
 .guest-link {
     padding-top: 2rem;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 200;
 }
 
@@ -128,7 +131,7 @@ h1 {
 .gaveide-text {
     grid-area: text-area;
     font-weight: 200;
-    max-width: 30rem;
+    max-width: 80%;
 }
 
 .gaveide-image {
@@ -167,37 +170,158 @@ h3 {
 }
 
 .koncertoplevelser p {
-    max-width: 55rem;
+    max-width: 85%;
 }
+
+/* styling af mobile enheder */
 
 @media (max-width: 480px) {
 
+    main {
+        margin-left: 1.5rem;
+    }
+
+    /*intro*/
+
     .grid-container-1 {
         display: grid;
-        grid-template-columns: 1fr; /* To lige store kolonner */
+        grid-template-columns: 1fr;
         grid-template-areas:
         "overskrift-area"
         "image-area"
         "text-area";
-
-        gap: 2rem; /* Afstand mellem kolonner */
-        padding-bottom: 3.5rem 0;
+        padding-bottom: 3.5rem;
     }
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
-    .intro-text .guest-link {
-        font-size: 18px;
+    .text {
+        padding: 1rem 0;
+    }
+
+    .intro-text, .guest-link, .koncert-text, .gaveide-text, koncert-highlight {
+        font-size: 1rem;
     }
 
     .quote {
-        font-size: 24px;
+        font-size: 1rem;
     }
 
     .infographic {
         display: none;
+    }
+
+    .grid-container-2 {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+        "overskrift-area"
+        "collage-area"
+        "text-area";
+        row-gap: 1rem;
+        padding: 3.5rem 0;
+    }
+
+    .overskrift-gave {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .koncert-overskrift {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .highlight-overskrift {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .linjeskift {
+        display: none;
+    }
+
+    .koncert-billede {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+}
+
+/* styling af ipgads og små skærme*/
+@media (max-width: 1024px) {
+
+    /* intro */
+
+    .grid-container-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "overskrift-area"
+        "image-area"
+        "text-area";
+        padding-bottom: 3.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+    .intro-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .to-billeder {
+        width: 70%;
+        height: auto;
+    }
+
+    .intro-text, .guest-link, .koncert-text, .gaveide-text, koncert-highlight {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .quote {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    /* gaveidé */
+
+    .grid-container-2 {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+        "overskrift-area"
+        "collage-area"
+        "text-area";
+        row-gap: 1rem;
+        padding: 3.5rem 0;
+
+    }
+
+    .overskrift-gave {
+        font-size: 3.5rem;
+    }
+
+    .collage {
+        width: 70%;
+        height: auto;
+    }
+
+    .linjeskift {
+        display: none;
+    }
+
+    .gaveide-text {
+        grid-area: text-area;
+        font-weight: 200;
+        max-width: 100%;
     }
 
 }
