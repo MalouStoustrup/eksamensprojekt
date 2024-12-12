@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlister</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/playlister.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <article class="nav-logo">
+                <a href="#"><img src="billeder/logo.webp" alt="Radar logo"></a>
+            </article>
+
+                <!-- Checkbox til toggle -->
+            <input type="checkbox" id="menu-bar" class="menu-toggle">
+            <label for="menu-bar">
+                <i class="fa-solid fa-bars open-menu"></i>
+            </label>
+
+            <article class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-link-item"><a href="#">MUSIKUNIVERS <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item"><a href="#">Playlister</a></li>
+                            <li class="dropdown-menu-item"><a href="#">Artistprofiler</a></li>
+                            <li class="dropdown-menu-item"><a href="#">Podcasts</a></li>
+                            <li class="dropdown-menu-item"><a href="#">Oplevelser fra gæster</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-link-item"><a href="#">KONCERTER <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item"><a href="#">Koncertprogram</a></li>
+                            <li class="dropdown-menu-item"><a href="#">Tideligere koncerter</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link-item"><a href="#">OM RADAR <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item"><a href="#">Radars betydning</a></li>
+                            <li class="dropdown-menu-item"><a href="#">Bliv frivillig</a></li>
+                            <li class="dropdown-menu-item"><a href="#">Vores partnere</a></li>
+                            <li class="dropdown-menu-item"><a href="#">Find os på</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link-item"><a href="#">MEDLEMSKAB</a></li>
+                </ul>
+            </article>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <article class="intro-text">
+            <h1>FIND NY MUSIK PÅ RADAR</h1>
+            <p>Radar playlister samler musikken fra de upcoming kunstnere, der optræder på vores scene. Vil du opdage ny musik i Aarhus? Vores playlister giver dig et unikt indblik i de artister og bands, der gør Radar til noget helt særligt. Lyt med og find din næste yndlingskunstner.</p>
+            </article>
+
+            <article class="spotify">
+                <p>FØLG MED PÅ SPOTIFY</p>
+                <a href="https://open.spotify.com/user/radarlive" target="_blank" rel="noopener noreferrer">
+                    <img class="spotify-icon" src="billeder/playlister/spotify-logo.webp" alt="Spotify logo">
+                </a>
+            </article>
+
+        </section>
+
+        <section class="top-sange">
+            <article class="sange-overskrift">
+                <h2>Top sange af kommende Radar kunstnere</h2>
+            </article>
+            
+            <article class="se-sange">
+                    <p>Se alle sange</p>
+                    <img class="arrow-icon" src="billeder/playlister/arrow.webp" alt="Pil">
+            </article>
+        </section>
+
+        <section class="sange-grid">
+           
+            <article class="sang">
+                <p>Læs mere om artisten</p>
+            </article>
+            
+            <article class="sang">
+                <p>Læs mere om artisten</p>
+            </article>
+
+            <article class="sang">
+                <p>Læs mere om artisten</p>
+            </article>
+            
+            <article class="sang">
+                <p>Læs mere om artisten</p>
+            </article>
+            
+            <article class="sang">
+                <p>Læs mere om artisten</p>
+            </article>
+            
+            <article class="sang">
+                <p>Læs mere om artisten</p>
+            </article>
+
+        </section>
+
+        <section class="radar-playlister">
+            <article class="playlister-overskrift">
+                <h2>Radar playlister</h2>
+            </article>
+            
+            <article class="se-playlister">
+                    <p>Se alle playlister</p>
+                    <img class="arrow-icon" src="billeder/playlister/arrow.webp" alt="Pil">
+            </article>
+        </section>
+
+        <section class="playlister-grid">
+           
+            <article class="playliste">
+                <p>Blandet</p>
+            </article>
+            
+            <article class="playliste">
+                <p>Jazz</p>
+            </article>
+
+            <article class="playliste">
+                <p>Pop</p>
+            </article>
+            
+            <article class="playliste">
+                <p>Rock</p>
+            </article>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <article class="adresse">
+            <h4>ADRESSE</h4>
+            <ul>
+                <li>Radar</li>
+                <li>Karen Wegeners Gade 6</li>
+                <li>DK 8000 Aarhus C</li>
+            </ul>
+        </article>
+
+        <article class="kontakt">
+            <h4>KONTAKT</h4>
+            <ul>
+                <li>Bookingforespørgsler: booking(@)radarlive.dk</li>
+                <li>Generel kontakt: kontakt(@)radarlive.dk</li>
+                <li>Telefon +45 8676 0344</li>
+            </ul>
+        </article>
+
+        <article class="følg-os">
+            <h4>FØLG OS</h4>
+            <ul>
+                <li><a href="https://www.instagram.com/radarlive/" target="_blank" rel="noopener noreferrer">Intagram</a></li>
+                <li><a href="https://www.facebook.com/radarlive" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://open.spotify.com/user/radarlive" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+            </ul>
+        </article>
+
+    </footer>
+
+</body>
+</html>
