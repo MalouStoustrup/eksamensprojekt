@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary-color:#1d1d1d;
+    --primary-color:#161616;
     --secondary-color: #f7f7f7;
     --contrast-color: #E1381A;
 }
@@ -16,7 +16,7 @@ footer {
     "venstre midten højre";
     grid-template-columns: 1.5fr 2fr 0.75fr; /* Tre lige store kolonner */
     gap: 2rem; /* Afstand mellem kolonnerne */
-    background-color: #1d1d1d; /* Mørk baggrund */
+    background-color: var(--primary-color); /* Mørk baggrund */
     color: #f7f7f7; /* Lys tekstfarve */
     margin-left: 2.5rem;
     margin-right: 2.5rem;
