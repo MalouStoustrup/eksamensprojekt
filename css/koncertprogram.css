@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root {
+    --primary-color:#161616;
+    --secondary-color: #f7f7f7;
+    --contrast-color: #E1381A;
+}
+
+body {
+    background-color: var(--primary-color);
+
+}
+
+main {
+    margin-left: 2.5rem;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+    padding-top: 8rem;
+}
+
+

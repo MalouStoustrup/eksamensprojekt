@@ -110,7 +110,7 @@ h1 {
 
 .playlister-overskrift-grid {
     display: grid;
-    grid-template-columns: 1.5fr 0.5fr; 
+    grid-template-columns: 1.5fr 0.6fr; 
     gap: 3rem;
     padding-bottom: 1rem;
 }
@@ -153,7 +153,7 @@ h1 {
 
 /* CSS for mobilvisning */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     main {
         margin-left: 2rem;
@@ -208,7 +208,7 @@ h1 {
     }
 
     .se-sange p {
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-weight: 200;
     }
 
@@ -254,7 +254,7 @@ h1 {
     }
 
     .se-playlister p {
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-weight: 200;
     }
 
@@ -264,6 +264,7 @@ h1 {
         display: grid;
         grid-template-columns: 1fr; 
         gap: 1.5rem;
+        padding-bottom: 3rem;
     }
 
     .playliste p {
@@ -271,3 +272,27 @@ h1 {
     }
 
 }
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .intro-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .spotify {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .sange-overskrift-grid {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
+
+}
+
+
