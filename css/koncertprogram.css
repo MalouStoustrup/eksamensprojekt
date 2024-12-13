@@ -96,7 +96,57 @@ font-size: 1.5rem;
 
 /*box til forslag*/
 
-.suggestions-box {
-    margin: 4rem auto; /* Gør boksen centreret */
-    padding: 2rem;
+.container-til-boks {
+    display: flex;
+    justify-content: center;
+
 }
+.suggestions-box {
+    margin: 4rem 0;
+    padding: 3rem 4rem;
+    text-align: center; 
+    border: 2px solid var(--secondary-color);
+    max-width: 500px; /* Gør boksen ikke for bred */
+    color: var(--secondary-color); 
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--secondary-color); /* Understregning */
+    padding: 0.5rem 0;
+}
+
+.pil {
+    width: 2rem;
+    height: 2rem;
+}
+
+.input-container input {
+    flex:1;
+    border: none;
+    background: none;
+    color: var(--secondary-color); 
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.input-container input::placeholder {
+    color: var(--secondary-color); /* Placeholder farve */
+    opacity: 0.7;
+}
+
+.input-container button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.forslag-overskrift {
+    font-size: 2.25rem;
+    font-weight: 200;
+}
+
+
