@@ -1,7 +1,9 @@
 * {
-    margin: 0;
+    margin:0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
 }
 
 :root {
@@ -12,14 +14,89 @@
 
 body {
     background-color: var(--primary-color);
-
 }
 
 main {
     margin-left: 2.5rem;
     margin-right: 5rem;
     margin-bottom: 1rem;
-    padding-top: 8rem;
+    padding-top: 7rem;
 }
 
+/* intro */
 
+h1 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.program-header p {
+    max-width: 42rem;
+    line-height: 2rem;
+    font-weight: 100;
+    padding-top: 0.5rem;
+}
+/* Overskrift-grid */
+
+.overskrift-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 0.5fr; 
+        gap: 3rem;
+    }
+
+.filter-icon {
+    width: 2.25rem;
+    height: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+h2 {
+    font-size: 6rem;
+}
+
+/* koncert grid */
+
+.concert img {
+    width: 100%;
+    height: auto;
+}
+
+.concert-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.space {
+    padding-top: 1.5rem;
+}
+
+/*koncert info*/
+
+.genre {
+    font-weight: 100;
+}
+
+.concert-name {
+text-transform: uppercase;
+font-size: 1.5rem;
+}
+
+.date {
+    font-size: 1.25rem;
+    font-weight: 300;
+
+}
+
+/*box til forslag*/
+
+.suggestions-box {
+    margin: 4rem auto; /* Gør boksen centreret */
+    padding: 2rem;
+}
