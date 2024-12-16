@@ -90,8 +90,15 @@ h1 {
     font-weight: 200;
 }
 
-.bold {
+.link {
     font-weight: 600;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: 0.4s ease;
+}
+
+.link:hover {
+    color: var(--contrast-color);
 }
 
 /* infographic  */
@@ -257,7 +264,6 @@ h3 {
         height: auto;
         padding: 2rem 0;
     }
-
 }
 
 /* styling af ipgads og små skærme*/

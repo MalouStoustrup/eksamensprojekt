@@ -85,6 +85,7 @@ strong {
     border: none;
     position: relative;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .cta-button::after {
@@ -94,10 +95,12 @@ strong {
     height: 2px; /* Tykkelse på linjen */
     background-color: var(--secondary-color); /* Hvid farve til linjen */
     margin-top: 0.3rem; /* Afstand mellem tekst og linje */
+    transition: 0.3s ease;
 }
 
 .cta-button:hover {
     color: var(--contrast-color); /* Rød farve ved hover */
+    transform: scale(1.1);
 }
 
 .cta-button:hover::after {
@@ -124,7 +127,7 @@ strong {
         margin-left: 2rem;
         margin-right: 2rem;
         margin-bottom: 1rem;
-        padding-top: 7rem;
+        padding-top: 7.5rem;
         overflow: hidden;
     }
 
@@ -149,6 +152,20 @@ strong {
 }
 
 @media (min-width: 480px) and (max-width: 1024px) { 
+    
+    h1 {
+        font-size: 3.5rem;
+        line-height: 5rem;
 
+    }
+
+    .detaljer p {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .brud {
+        display: none;
+    }
     
 }

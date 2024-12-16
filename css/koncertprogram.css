@@ -35,6 +35,7 @@ h1 {
     line-height: 2rem;
     font-weight: 100;
     padding-top: 0.5rem;
+    font-size: 1rem;
 }
 /* Overskrift-grid */
 
@@ -42,6 +43,7 @@ h1 {
         display: grid;
         grid-template-columns: 1.5fr 0.5fr; 
         gap: 3rem;
+        justify-content: space-between;
     }
 
 .filter-icon {
@@ -63,18 +65,27 @@ h2 {
 /* koncert grid */
 
 .concert img {
-    width: 100%;
-    height: auto;
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Sørger for, at billeder beskæres og fylder pladsen */
 }
 
 .concert-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.5rem;
 }
 
 .space {
     padding-top: 1.5rem;
+}
+
+.concert {
+    transition: 0.3s ease;
+}
+
+.concert:hover {
+    transform: scale(1.05); /* Forstørrer boksen med 10% */
 }
 
 /*koncert info*/
@@ -92,6 +103,10 @@ font-size: 1.5rem;
     font-size: 1.25rem;
     font-weight: 300;
 
+}
+.text-wrapper {
+    word-wrap: break-word; /* Bryder ord */
+    overflow-wrap: break-word;
 }
 
 /*box til forslag*/
@@ -150,7 +165,7 @@ font-size: 1.5rem;
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     main {
         margin-left: 2rem;
@@ -169,7 +184,7 @@ font-size: 1.5rem;
     .overskrift-grid {
         display: grid;
         grid-template-columns: 1fr 0.25fr;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .filter-icon {
@@ -178,7 +193,7 @@ font-size: 1.5rem;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     /* koncert grid */
@@ -190,28 +205,89 @@ font-size: 1.5rem;
 
     .concert-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* To kolonner på små skærme */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1rem;
     }
 
     .space {
         padding-top: 1.5rem;
     }
+
+    .concert-name {
+        font-size: 1.2rem;
+    }
+
+    .genre {
+        font-size: 0.8rem;
+    }
+
+    .date {
+        font-size: 1rem;
+    }
+
+    /*box til forslag*/
+
+    .suggestions-box {
+        padding: 3rem 2.5rem;
+    }
+
+    .forslag-overskrift {
+        font-size: 1.6rem;
+    }
+
+    .input-container input {
+        font-size: 1rem;
+    }
     
+    .pil {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
 }
 
-@media (min-width: 480px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     
     /* koncert grid */
 
-    .concert img {
-        width: 100%;
-        height: auto;
-    }
-
     .concert-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* To kolonner på små skærme */
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1rem;
     }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    /* koncert grid */
+
+
+    .space {
+        padding-top: 1.5rem;
+    }
+
+    .concert-name {
+        font-size: 1.2rem;
+    }
+
+    /*box til forslag*/
+
+    .suggestions-box {
+        padding: 3rem 2.5rem;
+    }
+
+    .forslag-overskrift {
+        font-size: 2rem;
+    }
+
+    .input-container input {
+        font-size: 1.1rem;
+    }
+    
+    .pil {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
 }
