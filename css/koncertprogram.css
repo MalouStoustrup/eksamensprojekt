@@ -150,3 +150,68 @@ font-size: 1.5rem;
 }
 
 
+@media (max-width: 480px) {
+
+    main {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        padding-top: 7rem;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* Overskrift-grid */
+
+    .overskrift-grid {
+        display: grid;
+        grid-template-columns: 1fr 0.25fr;
+        gap: 3rem;
+    }
+
+    .filter-icon {
+    width: 1.25rem;
+    height: 1rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    /* koncert grid */
+
+    .concert img {
+        width: 100%;
+        height: auto;
+    }
+
+    .concert-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* To kolonner på små skærme */
+        gap: 1rem;
+    }
+
+    .space {
+        padding-top: 1.5rem;
+    }
+    
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    
+    /* koncert grid */
+
+    .concert img {
+        width: 100%;
+        height: auto;
+    }
+
+    .concert-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* To kolonner på små skærme */
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+
+:root {
+    --primary-color:#161616;
+    --secondary-color: #f7f7f7;
+    --contrast-color: #E1381A;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+main {
+    margin-left: 2.5rem;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+    padding-top: 7rem;
+    text-align: center;
+}
+
+p {
+    line-height: 2rem;
+}
+
+
+.membership-section {
+    max-width: 60rem; 
+}
+
+h1 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+}
+
+.medlemskab-description {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.medlemskab-box {
+    border: 2px solid var(--secondary-color);
+    padding: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 30rem;
+}
+
+strong {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.pris {
+    font-weight: 100;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.medlemskab-box p {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 0.8rem;
+}
+
+.orange {
+    color: var(--contrast-color);
+}
+
+.cta-button {
+    background: none; /* Fjern baggrundsfarve */
+    color: var(--secondary-color); /* Hvid tekst */
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 1rem;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.cta-button::after {
+    content: ""; /* Tilføjer en linje */
+    display: block;
+    width: 100%; /* Fuldt udstrakt linje */
+    height: 2px; /* Tykkelse på linjen */
+    background-color: var(--secondary-color); /* Hvid farve til linjen */
+    margin-top: 0.3rem; /* Afstand mellem tekst og linje */
+}
+
+.cta-button:hover {
+    color: var(--contrast-color); /* Rød farve ved hover */
+}
+
+.cta-button:hover::after {
+    background-color: var(--contrast-color); /* Rød farve til linjen ved hover */
+}
+.details-box {
+    display: flex;
+    justify-content: center;
+}
+
+.detaljer {
+    display:flex;
+    justify-content: center;
+    max-width: 40rem;
+}
+.detaljer p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin: 4rem 0;
+}
+
+@media (max-width: 480px) {
+    main {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        padding-top: 7rem;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+
+    }
+    .brud {
+        display: none;
+    }
+
+    strong {
+        font-size: 2rem;
+    }
+
+    .detaljer p {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 1024px) { 
+
+    
+}
