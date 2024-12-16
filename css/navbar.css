@@ -28,6 +28,32 @@ body{
     padding-right: 3rem;
 }
 
+.nav-links-container {
+    padding: 16px 0;
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav-container .nav-links-container .nav-links a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+#sidebar-active {
+    display: none;
+}
+
+
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+}
+
+
 .nav-logo {
     width: 170px;
     padding: 1rem 0;
@@ -37,9 +63,6 @@ body{
     object-fit: cover;
 }
 
-.nav-links-container {
-    padding: 16px 0;
-}
 
 .nav-links {
     list-style: none;
@@ -96,6 +119,7 @@ body{
 
 }
 
+
 .nav-links > .nav-link-item:hover > .dropdown-menu { 
     transform: translate(8px);
     visibility: visible;
@@ -121,11 +145,6 @@ body{
     font-weight: 600;
 }
 
-
-#menu-bar {
-    display: none;
-}
-
 .nav-container .open-menu {
     font-size: 30px;
     color: var(--secondary-color);
@@ -149,27 +168,41 @@ body{
 
 @media(max-width:991px) {
     
-    .nav-container .open-menu {
-        display:block;
-    }
 
     .nav-container .nav-links-container {
-        width: 100vw; /* Hele bredden af viewporten */
-        height: 100vh; /* Hele højden af viewporten */
-        position:absolute;
-        top: 100%; 
-        right: 0rem;
-        display: none;
         flex-direction: column; /* Sørg for at punkterne er lodret arrangeret */
-        align-items: flex-end; /* Juster punkterne til højre */
+        align-items: flex-start; /* Juster punkterne til højre */
         padding: 1rem; /* Giv lidt padding for spacing */
-        background-color: var(--primary-color);
+        background-color: #161616d1(--primary-color);
+        backdrop-filter: blur(10px);
+        
+
+        position: fixed;
+        top: 0; 
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+
+        transition: 0.75s ease-out;
+
     }
 
-    .nav-links > .nav-link-item > a {
-        justify-content: flex-end;
-        margin-right: 3rem;
+    .nav-container .nav-links-container .nav-links a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 0;
     }
+
+    .open-sidebar-button, .close-sidebar-button {
+        margin: 20px;
+        display: block;
+    }
+
+    #sidebar-active:checked ~ .nav-links-container {
+        right: 0;
+    }
+
 
     .nav-container > .nav-links-container > .nav-links > .nav-link-item {
         width:100%;
