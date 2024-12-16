@@ -74,4 +74,13 @@ footer a:hover {
             "højre"; /* Definer områder i én kolonne */
     }
 
+    footer h4 {
+        font-size: 14px;
+    }
+
+    footer li {
+        font-size: 12px;
+
+    }
+
 }

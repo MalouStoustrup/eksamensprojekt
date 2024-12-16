@@ -21,7 +21,6 @@ body{
 
 .nav-container {
     position: fixed;
-    background-color: var(--primary-color);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -56,14 +55,17 @@ body{
     text-decoration: none;
     display: flex;
     padding: 16px 0;
-    color: var(--secondary-color);
-    font-weight: 300;
     transition: 0.3s ease;
     align-items: center;
 }
 
+.hvid > a {
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+
 .nav-links > .nav-link-item:hover > a {
-font-weight: 600;
+    font-weight: 600;
 }
 
 .nav-link-item > a > .fa-chevron-down {
@@ -140,6 +142,19 @@ opacity: 1;
     display: none;
 }
 
+.orange-knap {
+    background: var(--contrast-color);
+    border-radius: 2.8rem;
+    padding: 0 1.5rem;
+    filter: drop-shadow(0 0 43px #e1381ad9);
+}
+
+.orange-knap a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+
 @media(max-width:991px) {
     
     
@@ -187,5 +202,12 @@ opacity: 1;
         display: block;
     }
 
-
+    .orange-knap {
+        background: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    .orange-knap a {
+        color: var(--secondary-color);
+    }
 }

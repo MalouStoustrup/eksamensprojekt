@@ -105,6 +105,7 @@ strong {
 
 .cta-button:hover::after {
     background-color: var(--contrast-color); /* Rød farve til linjen ved hover */
+    transform: scale(1.1);
 }
 .details-box {
     display: flex;
