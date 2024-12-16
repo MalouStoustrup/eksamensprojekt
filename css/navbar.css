@@ -15,7 +15,6 @@
 
 body{
     width: 100vw;
-    background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
@@ -49,7 +48,6 @@ body{
     display: inline-block;
     margin: 0 24px;
     position: relative;
-
 }
 .nav-links > .nav-link-item > a {
     text-decoration: none;
@@ -89,24 +87,24 @@ body{
     left: -16px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #1d1d1d53;
-    backdrop-filter: blur(10px);
+    background-color: #161616aa; /* Semi-transparent sort */
+    backdrop-filter: blur(8px);
     transform: translateY(0);
     transition: 0.3s ease;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     visibility: hidden;
     opacity: 0;
 
 }
 
 .nav-links > .nav-link-item:hover > .dropdown-menu { 
-transform: translate(8px);
-visibility: visible;
-opacity: 1;
+    transform: translate(8px);
+    visibility: visible;
+    opacity: 1;
 }
 
 .nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item { 
     list-style: none;
+
 }
 
 .nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item > a { 
@@ -121,13 +119,6 @@ opacity: 1;
 
 .nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item > a:hover { 
     font-weight: 600;
-}
-
-
-.nav-container .close-menu {
-    display: none;
-    font-size: 24px;
-    color: var(--secondary-color);
 }
 
 
@@ -146,6 +137,7 @@ opacity: 1;
     background: var(--contrast-color);
     border-radius: 2.8rem;
     padding: 0 1.5rem;
+    mix-blend-mode: normal;
     filter: drop-shadow(0 0 43px #e1381ad9);
 }
 
@@ -157,7 +149,6 @@ opacity: 1;
 
 @media(max-width:991px) {
     
-    
     .nav-container .open-menu {
         display:block;
     }
@@ -165,19 +156,24 @@ opacity: 1;
     .nav-container .nav-links-container {
         width: 100vw; /* Hele bredden af viewporten */
         height: 100vh; /* Hele højden af viewporten */
-        position: absolute;
+        position:absolute;
         top: 100%; 
         right: 0rem;
-        background-color: #1d1d1d53;
-        backdrop-filter: blur(10px);
         display: none;
         flex-direction: column; /* Sørg for at punkterne er lodret arrangeret */
         align-items: flex-end; /* Juster punkterne til højre */
         padding: 1rem; /* Giv lidt padding for spacing */
+        background-color: var(--primary-color);
+    }
+
+    .nav-links > .nav-link-item > a {
+        justify-content: flex-end;
+        margin-right: 3rem;
     }
 
     .nav-container > .nav-links-container > .nav-links > .nav-link-item {
         width:100%;
+        
     }
 
     .nav-container > .nav-links-container > .nav-links > .nav-link-item > .dropdown-menu {
@@ -190,6 +186,7 @@ opacity: 1;
 
     .nav-container > .nav-links-container .nav-links > .nav-link-item:hover > .dropdown-menu {
         max-height: 250px;
+        
     }
 
     .nav-container > .nav-links-container > .nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item {

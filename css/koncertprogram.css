@@ -81,7 +81,7 @@ h2 {
 }
 
 .concert {
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .concert:hover {
