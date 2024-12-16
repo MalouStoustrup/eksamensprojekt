@@ -25,7 +25,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-left: 1rem;
-    padding-right: 3rem;
+    padding-right: 1rem;
 }
 
 .nav-links-container {
@@ -135,7 +135,7 @@ body{
    text-decoration: none;
    display: block;
    color: var(--secondary-color);
-   font-weight: 300;
+   font-weight: 100;
    transition: 0.3s ease;
    padding: 16px;
 
@@ -174,7 +174,7 @@ body{
         align-items: flex-start; /* Juster punkterne til højre */
         padding: 1rem; /* Giv lidt padding for spacing */
         background-color: #161616d1(--primary-color);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
         
 
         position: fixed;
@@ -183,8 +183,7 @@ body{
         z-index: 10;
         width: 300px;
 
-        transition: 0.75s ease-out;
-
+        transition: 0.5s ease-out;
     }
 
     .nav-container .nav-links-container .nav-links a {
@@ -222,10 +221,8 @@ body{
         
     }
 
-    .nav-container > .nav-links-container > .nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item {
-        background-color: #1d1d1d53;
-        backdrop-filter: blur(10px);
-
+    .nav-links > .nav-link-item > .dropdown-menu { 
+        background-color:transparent;
     }
 
     .menu-toggle:checked ~ .nav-links-container {
