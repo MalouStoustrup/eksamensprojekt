@@ -185,6 +185,9 @@ h3 {
 
     main {
         margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+        padding-top: 5rem;
     }
 
     /*intro*/
@@ -196,7 +199,7 @@ h3 {
         "overskrift-area"
         "image-area"
         "text-area";
-        padding-bottom: 3.5rem;
+        padding-bottom: 2rem;
     }
 
     h1 {
@@ -228,7 +231,7 @@ h3 {
         "collage-area"
         "text-area";
         row-gap: 1rem;
-        padding: 3.5rem 0;
+        padding: 2rem 0;
     }
 
     .overskrift-gave {
@@ -243,6 +246,11 @@ h3 {
     .koncert-overskrift {
         font-size: 2rem;
         line-height: 3rem;
+    }
+
+    .koncertoplevelser {
+        padding: 2rem 0;
+
     }
 
     .koncertoplevelser p {
@@ -262,13 +270,16 @@ h3 {
     .koncert-billede {
         width: 100%;
         height: auto;
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 }
 
 /* styling af ipgads og små skærme*/
 @media (min-width: 480px) and (max-width: 1024px) {
 
+    main {
+        padding-top: 7rem;
+    }
     /* intro */
 
     .grid-container-1 {
@@ -278,7 +289,7 @@ h3 {
         "overskrift-area"
         "image-area"
         "text-area";
-        padding-bottom: 3.5rem;
+        padding-bottom: 2.5rem;
     }
 
     h1 {
@@ -315,7 +326,7 @@ h3 {
         "collage-area"
         "text-area";
         row-gap: 1rem;
-        padding: 3.5rem 0;
+        padding: 2.5rem 0;
 
     }
 
@@ -336,6 +347,11 @@ h3 {
         grid-area: text-area;
         font-weight: 200;
         max-width: 100%;
+    }
+
+
+    .koncert-billede {
+        padding-bottom: 0rem;
     }
 
 }

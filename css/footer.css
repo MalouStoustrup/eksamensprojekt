@@ -64,7 +64,7 @@ footer a:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     footer {
         margin: 1.5rem;
         grid-template-columns: 1fr; /* Skift til én kolonne */
@@ -80,7 +80,14 @@ footer a:hover {
 
     footer li {
         font-size: 12px;
-
     }
 
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    footer {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
 }

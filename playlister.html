@@ -24,15 +24,19 @@
                 <a href="index.html"><img src="billeder/logo.webp" alt="Radar logo"></a>
             </article>
 
-                <!-- Checkbox til toggle -->
-            <input type="checkbox" id="menu-bar" class="menu-toggle">
-            <label for="menu-bar">
-                <i class="fa-solid fa-bars open-menu"></i>
+            <!-- checkbox-->
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active">
+                <svg class="open-sidebar-button" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#f7f7f7"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </label>
 
             <article class="nav-links-container">
+                <label for="sidebar-active">
+                    <svg class="close-sidebar-button" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#f7f7f7"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+
                 <ul class="nav-links">
-                    <li class="nav-link-item"><a href="#">MUSIKUNIVERS <i class="fa-solid fa-chevron-down"></i></a>
+                    <li class="nav-link-item hvid"><a href="#">MUSIKUNIVERS <i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-menu-item"><a href="playlister.html">Playlister</a></li>
                             <li class="dropdown-menu-item"><a href="#">Artistprofiler</a></li>
@@ -41,14 +45,14 @@
                         </ul>
                     </li>
                     
-                    <li class="nav-link-item"><a href="#">KONCERTER <i class="fa-solid fa-chevron-down"></i></a>
+                    <li class="nav-link-item hvid"><a href="#">KONCERTER <i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-menu-item"><a href="koncertprogram.html">Koncertprogram</a></li>
                             <li class="dropdown-menu-item"><a href="#">Tideligere koncerter</a></li>
                         </ul>
                     </li>
 
-                    <li class="nav-link-item"><a href="#">OM RADAR <i class="fa-solid fa-chevron-down"></i></a>
+                    <li class="nav-link-item hvid"><a href="#">OM RADAR <i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-menu-item"><a href="#">Radars betydning</a></li>
                             <li class="dropdown-menu-item"><a href="#">Bliv frivillig</a></li>
@@ -56,7 +60,7 @@
                             <li class="dropdown-menu-item"><a href="#">Find os på</a></li>
                         </ul>
                     </li>
-                    <li class="nav-link-item"><a href="medlemskab.html">MEDLEMSKAB</a></li>
+                    <li class="nav-link-item orange-knap"><a href="medlemskab.html">MEDLEMSKAB</a></li>
                 </ul>
             </article>
         </nav>
