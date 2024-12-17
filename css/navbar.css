@@ -212,7 +212,8 @@ body{
         width:100%;
         overflow: hidden;
         transition: 0.7s ease;
-        background-color:transparent;
+        background-color: transparent;
+        backdrop-filter: none;
     }
 
     .nav-container > .nav-links-container .nav-links > .nav-link-item:hover > .dropdown-menu {

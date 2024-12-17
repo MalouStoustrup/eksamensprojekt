@@ -63,16 +63,16 @@ h2 {
 
 /* koncert grid */
 
-.concert img {
-        width: 100%;
-        height: auto;
-        object-fit: cover; /* Sørger for, at billeder beskæres og fylder pladsen */
-}
-
 .concert-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.5rem;
+}
+
+.concert img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .space {
@@ -156,6 +156,10 @@ font-size: 1.5rem;
     cursor: pointer;
     display: flex;
     align-items: center;
+}
+
+.input-container button:hover .pil {
+    transform: translateX(5px);
 }
 
 .forslag-overskrift {
