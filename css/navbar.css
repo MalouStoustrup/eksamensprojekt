@@ -173,10 +173,9 @@ body{
         flex-direction: column; /* Sørg for at punkterne er lodret arrangeret */
         align-items: flex-start; /* Juster punkterne til højre */
         padding: 1rem; /* Giv lidt padding for spacing */
-        background-color: #161616d1(--primary-color);
+        background-color: #161616d1;
         backdrop-filter: blur(20px);
         
-
         position: fixed;
         top: 0; 
         right: -100%;
