@@ -1,4 +1,4 @@
-user-agent:*
-disallow:/
+User-agent: *
+Disallow: /
 
-sitemap: https://eksamensprojekt-2024.maloustoustrup.dk/sitemap.xml
+Sitemap: https://eksamensprojekt-2024.maloustoustrup.dk/sitemap.xml
