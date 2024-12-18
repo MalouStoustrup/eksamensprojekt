@@ -1,0 +1,4 @@
+user-agent:*
+disallow:/
+
+sitemap: https://eksamensprojekt-2024.maloustoustrup.dk/sitemap.xml
