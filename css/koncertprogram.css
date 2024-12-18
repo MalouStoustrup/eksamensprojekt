@@ -70,6 +70,7 @@ h2 {
 }
 
 .concert img {
+    aspect-ratio: 1/1;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -201,6 +202,7 @@ font-size: 1.5rem;
     /* koncert grid */
 
     .concert img {
+        aspect-ratio: 1/1;
         width: 100%;
         height: auto;
     }
